@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "PokeFont";
+    src: url(./pokmon/Pokemon\ Solid.ttf);
+}
+
+@font-face {
+    font-family: "PokeFont Hollow";
+    src: url(./pokmon/Pokemon\ Hollow.ttf);
+}
+
+h1 {
+    font-family: "PokeFont Hollow";
+    color: blue;
+}
+
+#entry {
+    background-color: red;
+}
+
+#sprites {
+    background-color: lightgray;
+    width: fit-content;
+    border-radius: 15px;
+}
+
+#Reg, #Shiny{
+    font-family: "PokeFont";
+    margin-left: 14.5%;
+}
