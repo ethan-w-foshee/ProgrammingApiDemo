@@ -1,3 +1,21 @@
-require('dotenv').config()
-
-console.log(proces.env.API_KEY)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon API</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>What Pokemon to look up?</h1>
+    <input type="text" name="PokemonName" id="PokeName">
+    <button onclick="retrieveData()">Fetch Data</button>
+    <h1>Pokedex Entry:</h1>
+    <div id="entry">
+        <div id="sprites">
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
