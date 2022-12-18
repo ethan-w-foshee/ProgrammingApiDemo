@@ -8,6 +8,10 @@
     src: url(./pokmon/Pokemon\ Hollow.ttf);
 }
 
+* {
+    font-family: "Silkscreen", cursive;
+}
+
 h1 {
     font-family: "PokeFont Hollow";
     color: blue;
@@ -15,15 +19,45 @@ h1 {
 
 #entry {
     background-color: red;
+    display: grid;
+    grid-column: 25%/75%;
 }
 
-#sprites {
+#wordEntry {
+    grid-column: 1/2;
+    margin-left: 5%;
+    margin-right: 15%;
+}
+
+#sprites, #evoChain {
     background-color: lightgray;
-    width: fit-content;
-    border-radius: 15px;
+    width: 15vw;
+    border-radius: 10%;
+    display: grid;
+    grid-column: 50%/50%;
+    grid-column: 2/3;
+    margin: auto;
+}
+
+#evoChain {
+    background-color: purple;
 }
 
 #Reg, #Shiny{
     font-family: "PokeFont";
-    margin-left: 14.5%;
+    text-align: center;
+}
+
+span {
+    font-family: 'Silkscreen', cursive;
+}
+
+.left-img {
+    grid-column: 1/2;
+    margin: auto;
+}
+
+.right-img {
+    grid-column: 2/3;
+    margin: auto;
 }

@@ -4,18 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokemon API</title>
+    <title>Pokémon API</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>What Pokemon to look up?</h1>
+    <h1>What Pokémon to look up?</h1>
+    <span>Friendly Note: The API only supports Pokémon up to Sword and Shield!</span>
+    <br>
     <input type="text" name="PokemonName" id="PokeName">
     <button onclick="retrieveData()">Fetch Data</button>
-    <h1>Pokedex Entry:</h1>
+    <h1>Pokédex Entry:</h1>
     <div id="entry">
-        <div id="sprites">
+        <div id="wordEntry">
+
         </div>
+        <div id="sprites">
+            
+        </div>
+        <div id="evoChain"></div>
     </div>
+    <script type="module" src="index.js"></script>
 </body>
-<script src="index.js"></script>
+
 </html>
