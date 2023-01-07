@@ -12,6 +12,10 @@
     font-family: "Silkscreen", cursive;
 }
 
+body {
+    /* background-image: linear-gradient(to bottom right, orange, blue); */
+}
+
 h1 {
     font-family: "PokeFont Hollow";
     color: blue;
@@ -81,7 +85,6 @@ span {
 #stage3 {
     grid-column: 3/4;
 }
-
 
 .stages {
     background-color: aliceblue;

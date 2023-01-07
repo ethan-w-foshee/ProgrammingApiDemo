@@ -4,6 +4,7 @@ var pokeInput = document.getElementById("PokeName");
 var spritesEle = document.getElementById("sprites");
 var entryEle = document.getElementById("wordEntry");
 var evoChains = document.getElementById("evoChain");
+var bodyEle = document.getElementById("body")
 
 pokeInput.addEventListener("keydown", function (e) {
     if (e.code === "Enter") {
@@ -43,6 +44,7 @@ function fetchPokeData(pokeInput) {
             }
         })
         .then(data => {
+            backgroundColor(data)
             loadText(data)
         })
         .catch((error) => {
@@ -56,6 +58,10 @@ function loadImage(data) {
     <img src=${data.sprites.front_default} class="left-img"> <img src=${data.sprites.front_shiny} class="right-img">
     <br>
     <img src=${data.sprites.back_default} class="left-img"> <img src=${data.sprites.back_shiny} class="right-img">`
+}
+
+function backgroundColor(data) {
+    bodyEle.style.backgroundColor = data.color.name
 }
 
 function loadText(data) {
